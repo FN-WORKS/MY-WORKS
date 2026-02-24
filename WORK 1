@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+    
+  public static void main(String[]args){
+    
+    Scanner sc = new Scanner(System.in);
+// Scanner definition .
+    System.out.println("Enter the first number = ");
+    int n1 = sc.nextInt();
+// Defining the variables entered into the scanner.
+  
+    System.out.println("Enter the secomd number = ");
+    int n2 = sc.nextInt();
+  
+    double div = (double) n1/n2 ;
+  
+System.out.println("divide result = "+ div ) ;
+System.out.println("whole number part result = "+ (n1/n2) ) ;
+System.out.println("divide result = "+ ((double)n1%n2) ) ;
+// Prosess and outputs .
+        }
+    }
