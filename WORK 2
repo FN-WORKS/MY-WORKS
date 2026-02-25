@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+     public static void main(String[] args) {
+         
+         
+     Scanner input = new Scanner(System.in);
+     
+     
+     
+     System.out.print("enter first integer: ");
+     int num1 = input.nextInt();
+     System.out.print("enter second integer: ");
+     int num2 = input.nextInt();
+     
+     
+     double result = (float) num1 / num2;
+     int wholePart = num1 / num2;
+     int remainder = num1 % num2;
+     
+     
+ System.out.println("Division result: " + result);
+ System.out.println("Whole part: " + wholePart);
+ System.out.println("Remainder: " + remainder);
+ }
+}
