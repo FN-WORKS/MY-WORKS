@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+ public static void main(String[] args) {
+     
+    Scanner input = new Scanner(System.in);
+    
+         System.out.print("Enter city name: ");
+         String city = input.nextLine();
+         
+         System.out.print("Enter zip code: ");
+         String zip = input.nextLine();
+         
+         String code = city.substring(0, 2).toLowerCase() + zip;
+         
+         System.out.println("Smart Code: " + code);
+ }
+}
