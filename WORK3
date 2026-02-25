@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+ public static void main(String[] args) {
+     
+ Scanner input = new Scanner(System.in);
+ 
+ 
+             System.out.print("Enter favorite color: ");
+             String color = input.nextLine();
+             
+             System.out.print("Enter favorite fruit: ");
+             String fruit = input.nextLine();
+             
+             
+             String password = color.substring(color.length() - 3) + fruit.substring(0, 3);
+             
+             
+             System.out.println("Generated password: " + password);
+             
+             
+ }
+}
