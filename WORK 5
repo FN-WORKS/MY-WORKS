@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args) {
+    
+    //declare scanner Object
+	Scanner sc = new Scanner(System.in);
+	
+	    // declare values
+	    System.out.print("Enter your first name : ");
+	    String n1= sc.nextLine();
+	    System.out.print("Enter your mid name : ");
+	    String n2= sc.nextLine();
+	    System.out.print("Enter your last name : ");
+	    String n3= sc.nextLine();
+	
+	
+	// prosess of making the first char of the name equal to capital letter .    
+    String n1c = n1.substring(0,1).toUpperCase() + n1.substring(1);
+    String n2c = n2.substring(0,1).toUpperCase() + n2.substring(1);
+    String n3c = n3.substring(0,1).toUpperCase() + n3.substring(1);
+    
+    // calculating lingth
+    String fn = n1c+n2c+n3c ;
+    int fnl = fn.length();
+    
+    
+    System.out.println(" ");
+    System.out.println(" ");
+    
+
+// a prosess for centering lines
+if (fnl <= 9) {
+        System.out.println("------- FULL NAME -------");
+        System.out.println("       " + n1c + " " + n2c + " " + n3c);
+    
+    } else if (fnl <= 12) { // 'else if' is required here
+        System.out.println("------- FULL NAME -------");
+        System.out.println("      " + n1c + " " + n2c + " " + n3c);
+        
+    } else if (fnl <= 16) { // 'else if' is required here too
+        System.out.println("------- FULL NAME -------");
+        System.out.println("      " + n1c + " " + n2c + " " + n3c);
+   
+    } else if (fnl <= 20) { // Use a plain 'else' for anything 16 or larger
+        System.out.println("     ------- FULL NAME -------");
+        System.out.println("       " + n1c + " " + n2c + " " + n3c);
+        
+        
+    }else{ // Use a plain 'else' for anything 16 or larger
+        System.out.println(" ------- FULL NAME -------");
+        System.out.println(n1c + " " + n2c + " " + n3c);
+        
+    }
+} // Ends the main method
+} // Ends the class
