@@ -36,19 +36,21 @@ public static void main(String[] args) {
     System.out.println(" ");
     System.out.println(" ");
     
-    //adding breaks and desgin .
-    int fln = (fnl - 8);
-    // calculating lingth
+    //calculating lingths and adding breaks and desgin .
     String fn = n1c+n2c+n3c ;
     int fnl = fn.length();
+    int fln = (fnl - 8);
+    String breaks = "-".repeat(fullname.length()) ;
     if (fnl < 9) {
-        System.out.println("-FULL NAME");
-        System.out.println("  "+fn);
+        System.out.println("-FULL NAME-");
+        System.out.println("   "+fn);
+        System.out.println("-----------");
     
     
     }else{
-      System.out.println("-FULL NAME"+"-".repeat(fln));
+      System.out.println("-FULL NAME-"+"-".repeat(fln));
       System.out.println(fullname);
+      System.out.println(breaks+"-");
     }
   } // Ends the main method
 } // Ends the class
