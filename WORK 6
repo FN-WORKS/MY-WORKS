@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args) {
+    
+    //declare scanner Object
+	Scanner sc = new Scanner(System.in);
+	
+	    // declare values
+	    System.out.print("Enter your first name : ");
+	    String n14 = sc.nextLine();
+	    System.out.print("Enter your mid name : ");
+	    String n24 = sc.nextLine();
+	    System.out.print("Enter your last name : ");
+	    String n34 = sc.nextLine();
+	    
+	//deleting unnecessary symbols .   
+	String n1 = n14.replaceAll("[^a-zA-Z ]", "");
+    String n2 = n24.replaceAll("[^a-zA-Z ]", "");
+    String n3 = n34.replaceAll("[^a-zA-Z ]", "");
+    String n10 = n1.replaceAll("\\s+", "");
+    String n20 = n2.replaceAll("\\s+", "");
+    String n30 = n3.replaceAll("\\s+", "");
+	
+	
+	// prosess of making the first char of the name equal to capital letter .    
+    String n1c = n10.substring(0,1).toUpperCase() + n10.substring(1);
+    String n2c = n20.substring(0,1).toUpperCase() + n20.substring(1);
+    String n3c = n30.substring(0,1).toUpperCase() + n30.substring(1);
+    
+   
+    //fullname
+    String fullname = n1c+" "+n2c+" "+n3c ;
+    
+    
+    System.out.println(" ");
+    System.out.println(" ");
+    System.out.println(" ");
+    
+    //adding breaks and desgin .
+    int fln = (fnl - 8);
+    // calculating lingth
+    String fn = n1c+n2c+n3c ;
+    int fnl = fn.length();
+    if (fnl < 9) {
+        System.out.println("-FULL NAME");
+        System.out.println("  "+fn);
+    
+    
+    }else{
+      System.out.println("-FULL NAME"+"-".repeat(fln));
+      System.out.println(fullname);
+    }
+  } // Ends the main method
+} // Ends the class
