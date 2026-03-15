@@ -7,17 +7,25 @@ public static void main(String[] args) {
 	
 	    // declare values
 	    System.out.print("Enter your first name : ");
-	    String n1= sc.nextLine();
+	    String n14 = sc.nextLine();
 	    System.out.print("Enter your mid name : ");
-	    String n2= sc.nextLine();
+	    String n24 = sc.nextLine();
 	    System.out.print("Enter your last name : ");
-	    String n3= sc.nextLine();
+	    String n34 = sc.nextLine();
+	    
+	//deleting unnecessary symbols .   
+	String n1 = n14.replaceAll("[^a-zA-Z ]", "");
+    String n2 = n24.replaceAll("[^a-zA-Z ]", "");
+    String n3 = n34.replaceAll("[^a-zA-Z ]", "");
+    String n10 = n1.replaceAll("\\s+", "");
+    String n20 = n2.replaceAll("\\s+", "");
+    String n30 = n3.replaceAll("\\s+", "");
 	
 	
 	// prosess of making the first char of the name equal to capital letter .    
-    String n1c = n1.substring(0,1).toUpperCase() + n1.substring(1);
-    String n2c = n2.substring(0,1).toUpperCase() + n2.substring(1);
-    String n3c = n3.substring(0,1).toUpperCase() + n3.substring(1);
+    String n1c = n10.substring(0,1).toUpperCase() + n10.substring(1);
+    String n2c = n20.substring(0,1).toUpperCase() + n20.substring(1);
+    String n3c = n30.substring(0,1).toUpperCase() + n30.substring(1);
     
     // calculating lingth
     String fn = n1c+n2c+n3c ;
@@ -26,29 +34,36 @@ public static void main(String[] args) {
     
     System.out.println(" ");
     System.out.println(" ");
+    System.out.println(" ");
+    
     
 
 // a prosess for centering lines
 if (fnl <= 9) {
         System.out.println("------- FULL NAME -------");
         System.out.println("       " + n1c + " " + n2c + " " + n3c);
+        System.out.println("-------------------------");
     
     } else if (fnl <= 12) { // 'else if' is required here
         System.out.println("------- FULL NAME -------");
         System.out.println("      " + n1c + " " + n2c + " " + n3c);
+        System.out.println("-------------------------");
         
     } else if (fnl <= 16) { // 'else if' is required here too
         System.out.println("------- FULL NAME -------");
         System.out.println("      " + n1c + " " + n2c + " " + n3c);
+        System.out.println("-------------------------");
    
     } else if (fnl <= 20) { // Use a plain 'else' for anything 16 or larger
         System.out.println("     ------- FULL NAME -------");
-        System.out.println("       " + n1c + " " + n2c + " " + n3c);
+        System.out.println("      " + n1c + " " + n2c + " " + n3c);
+        System.out.println("     -------------------------");
         
         
     }else{ // Use a plain 'else' for anything 16 or larger
-        System.out.println(" ------- FULL NAME -------");
-        System.out.println(n1c + " " + n2c + " " + n3c);
+        System.out.println("          ------- FULL NAME -------");
+        System.out.println("        "+n1c + " " + n2 + " " + n3);
+        System.out.println("          -------------------------");
         
     }
 } // Ends the main method
