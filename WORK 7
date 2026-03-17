@@ -1,0 +1,67 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args) {
+    
+    //declare scanner Object
+	Scanner sc = new Scanner(System.in);
+	
+	    // declare values
+	    System.out.print("Enter your first name : ");
+	    String n14 = sc.nextLine();
+	    System.out.print("Enter your mid name : ");
+	    String n24 = sc.nextLine();
+	    System.out.print("Enter your last name : ");
+	    String n34 = sc.nextLine();
+	    
+	//deleting unnecessary symbols .   
+	String n1 = n14.replaceAll("[^a-zA-Z ]", "");
+    String n2 = n24.replaceAll("[^a-zA-Z ]", "");
+    String n3 = n34.replaceAll("[^a-zA-Z ]", "");
+    String n10 = n1.replaceAll("\\s+", "");
+    String n20 = n2.replaceAll("\\s+", "");
+    String n30 = n3.replaceAll("\\s+", "");
+	
+	
+	// prosess of making the first char of the name equal to capital letter .    
+    String n1c = n10.substring(0,1).toUpperCase() + n10.substring(1);
+    String n2c = n20.substring(0,1).toUpperCase() + n20.substring(1);
+    String n3c = n30.substring(0,1).toUpperCase() + n30.substring(1);
+    
+   
+    //fullname
+    String fullname = n1c+" "+n2c+" "+n3c ;
+    
+    
+    System.out.println(" ");
+    System.out.println(" ");
+    System.out.println(" ");
+    
+    //calculating lingths and adding breaks and desgin .
+    String fn = n1c+n2c+n3c ;
+    int fnl = fn.length();
+     double fn1 = (fnl / 2);
+     double fn2 = (fn1 - (int)fn1);
+    double pp = ((((fnl- 9)/2)+ 1)) ;
+    int pp1 = 0 ;
+    if (fn2 >= 0.5 ){
+        pp1 = ((int)pp + 4);
+    }else{pp1 = (int)pp ;
+        
+    }
+    String breaks = "-".repeat(pp1) ;
+    String breaks2 = "-".repeat(fullname.length());
+    
+    if (fnl < 9) {
+        System.out.println("FULL NAME");
+        System.out.println("   "+fn);
+        System.out.println("-----------");
+    
+    
+    }else{
+      System.out.println(breaks +"FULL NAME"+breaks );
+      System.out.println(" " + fullname);
+      System.out.println("-" + breaks2+"-");
+    }
+    
+  } // Ends the main method
+} // Ends the class
