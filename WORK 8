@@ -4,6 +4,10 @@ public class Main
 	public static void main(String[] args) {
 	Scanner sr = new Scanner(System.in);
 		
+		System.out.println("how many prosesse do you want ?");
+		int s = sr.nextInt();
+		for(;s>=1;s--){
+		    
 		System.out.println("Select the Gender:");
 		System.out.println("****************************");
 		System.out.println("1. Male");
@@ -51,4 +55,4 @@ public class Main
 	               System.out.println();  
 	               System.out.print("Invalid gender input  ");  
 	        }
-}}
+}}}
