@@ -25,13 +25,13 @@ public class Main
 	               System.out.println();
 	               
 	               if(p < 65){
-	               System.out.print("Your pulse rate is: Low ");
+	               System.out.println("Your pulse rate is: Low ");
 	  
 	               }else if (p>=65 && p<=82){
-	               System.out.print("Your pulse rate is: Normal  ");
+	               System.out.println("Your pulse rate is: Normal  ");
 	           
 	               }else{
-	               System.out.print("Your pulse rate is: High  ");
+	               System.out.println("Your pulse rate is: High  ");
 	               }
 	                
 		            
@@ -42,13 +42,13 @@ public class Main
 		           System.out.println();
 		           
 	               if(p < 62){
-	               System.out.print("Your pulse rate is: Low ");
+	               System.out.println("Your pulse rate is: Low ");
 	                   
 	               }else if (p>=62 && p<=80){
-	               System.out.print("Your pulse rate is: Normal  ");
+	               System.out.println("Your pulse rate is: Normal  ");
 	                   
 	               }else{
-	               System.out.print("Your pulse rate is: High  ");
+	               System.out.println("Your pulse rate is: High  ");
 	               }
 		
 	        }else{
