@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sr = new Scanner(System.in);
+		
+		System.out.println("Select the Gender:");
+		System.out.println("****************************");
+		System.out.println("1. Male");
+		System.out.println("2. Female");
+		System.out.println("****************************");
+		
+		System.out.println("Enter your option [1, 2]");
+		int g = sr.nextInt();
+		System.out.println();
+
+		  if(g==1){
+		           
+		           System.out.print("Please enter your pulse rate : ");
+		           int p = sr.nextInt(); 
+	               System.out.println();
+	               
+	               if(p < 65){
+	               System.out.print("Your pulse rate is: Low ");
+	  
+	               }else if (p>=65 && p<=82){
+	               System.out.print("Your pulse rate is: Normal  ");
+	           
+	               }else{
+	               System.out.print("Your pulse rate is: High  ");
+	               }
+	                
+		            
+		   }else if (g==2){
+		           
+		           System.out.print("Please enter your pulse rate : ");
+		           int p = sr.nextInt();
+		           System.out.println();
+		           
+	               if(p < 62){
+	               System.out.print("Your pulse rate is: Low ");
+	                   
+	               }else if (p>=62 && p<=80){
+	               System.out.print("Your pulse rate is: Normal  ");
+	                   
+	               }else{
+	               System.out.print("Your pulse rate is: High  ");
+	               }
+		
+	        }else{
+	               System.out.println();  
+	               System.out.print("Invalid gender input  ");  
+	        }
+}}
