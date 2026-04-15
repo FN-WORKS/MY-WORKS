@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scn = new Scanner(System.in);	
+		
+		System.out.print("Enter your percentage : ");
+		int p = scn.nextInt();
+		
+		System.out.println("");
+		System.out.println("");
+		
+		if(p>=90 && p<=100){
+		    System.out.print("Your corresponding grade :  A");}
+		
+	    else if(p>=80 && p<=89){
+	        System.out.print("Your corresponding grade :  B");}
+	        
+	    else if(p>=70 && p<=79){
+	        System.out.print("Your corresponding grade :  C");}
+	        
+	    else if(p>=60 && p<=69){
+	        System.out.print("Your corresponding grade :  D");}
+	        
+	    else if(p>=0 && p<=59){
+	        System.out.print("Your corresponding grade :  F");}
+	        
+	    else{
+	        System.out.print("Invalid input");}
+		
+		
+	}
+}
