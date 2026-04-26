@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+    String s_name ;
+    
+    int s_id;
+    
+    boolean s_statment ;
+    
+    int s_1 ;
+    int s_2 ;
+    int s_3 ;
+    int s_4 ;
+    int s_5 ;
+    
+	public static void main(String[] args) {
+	 Scanner sr = new Scanner(System.in);
+	  Main INFO = new Main();
+	 	System.out.println("wellcom to uof to start enter ( 1 ) ");
+	 	
+	for(int loop = 0;loop == 5; loop++){
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	break;}
+	}
+}
