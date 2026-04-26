@@ -16,7 +16,7 @@ public class Main
 	public static void main(String[] args) {
 	 Scanner sr = new Scanner(System.in);
 	  Main INFO = new Main();
-	 	System.out.println("wellcom to uof to start enter ( 1 ) ");
+	 	System.out.println("wellcome to uof to start enter ( 1 ) ");
 	 	
 	for(int loop = 0;loop == 5; loop++){
         
