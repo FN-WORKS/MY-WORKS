@@ -1,0 +1,210 @@
+        import java.util.*;
+public class Main
+{
+    
+    static String[] s_nameplace = new String[1000];
+    
+    static int[] s_idplace = new int[1000];
+
+    static int place;
+    
+    static int s_id = 0 ;
+    
+    static boolean continue0 = true ; 
+    static int continue1 = 0 ;
+    
+    boolean s_statment ;
+    
+    int s_1 ;
+    int s_2 ;
+    int s_3 ;
+    int s_4 ;
+    int s_5 ;
+    
+    
+        static void newstudent(String s_name){
+         
+            
+            s_nameplace[place]= s_name;
+            s_id = 202600+place ;
+            
+            s_idplace[place] = s_id ;
+            
+            System.out.print("");
+            System.out.println("new student id : "+s_idplace[place]);
+            System.out.print("new student name : "+s_nameplace[place]);
+            
+        }
+        
+        static void deleteastudint(String delete){
+          Scanner sr = new Scanner(System.in); 
+           continue1 = 0 ;
+            
+              
+            for(int loop1 = 0 ; loop1 < place ; loop1++){
+               
+                if((delete.equals(s_nameplace[loop1]) || (delete.equals(String.valueOf(s_idplace[loop1])))) ){
+                    
+               System.out.print("Enter 0 to confirm the deletion or press anything else to cancel : "); 
+               String choise = sr.nextLine();
+               
+               System.out.print("");
+               System.out.print("");
+               System.out.print("");
+                if (choise.equals("0") ) {   
+                
+                s_nameplace[loop1] = "0";
+                s_idplace[loop1] = 0 ;
+                
+                System.out.println("Deleted successfully");
+                continue1 = 1 ;
+                break;
+                }else{
+                System.out.println("cancelled");
+                continue1 = 1 ;
+                return ;
+            }
+                }
+            }
+             if (continue1 == 0){
+            
+                System.out.println("wrong insert ... enter (1) to try again ");
+            
+                int choice = Integer.parseInt(sr.nextLine());
+                
+                if(choice == 1){
+                    continue0 = false;
+                }
+                else{
+                continue0 = true;
+                     return;
+                }
+   }
+            
+        }     
+          
+        
+        
+        static void showinfo(String info ){
+         Scanner sr = new Scanner(System.in); 
+           
+            for(int loop1 = 0 ; loop1 < 1 ; loop1++)
+             System.out.println("");
+            for(int loop1 = 0 ; loop1 < place ; loop1++){
+              
+                if((info.equals(s_nameplace[loop1]) || (info.equals(String.valueOf(s_idplace[loop1])))) ){
+                
+                System.out.println("");
+                System.out.println("");
+                System.out.println("student name : "+s_nameplace[loop1]);
+                System.out.println("student id : "+s_idplace[loop1]);
+                System.out.println("");
+                }  
+                
+                else{
+                System.out.println("");
+                System.out.println("");
+                System.out.println("wrong insert ... enter (1) to try again ");
+                int choise = sr.nextInt();
+                System.out.println("");
+                System.out.println("");
+                if (choise == 1){
+                
+                  
+                
+                }  
+                }      
+            }   
+              
+        }
+           
+            
+            
+            
+public static void main(String[] args) {
+	 Scanner sr = new Scanner(System.in);
+	  Main INFO = new Main();
+	 	System.out.println("wellcome to uof to start enter ( 1 ) ");
+	 	  String joke = sr.nextLine();
+	 	  
+	for(int loop = 0;loop <= 1000; loop++){
+        	   
+        	   System.out.println();
+		System.out.println("****************************");
+		System.out.println("1. add a new student ");
+		System.out.println("2. delete a studint  ");
+		System.out.println("3. show student information ");
+		System.out.println("4. ");
+		System.out.println("5. ");
+		System.out.println("6. ");
+		System.out.println("7. ");
+		System.out.println("****************************");
+        System.out.println("Select the your choise :");
+        
+         int choise = sr.nextInt(); 
+         sr.nextLine();
+         if(choise==1){
+         
+            System.out.println("");
+            System.out.println("");
+            System.out.println("enter studint name : ");
+            String add = sr.nextLine(); 
+            System.out.println();
+            newstudent(add);
+            System.out.println();
+            System.out.println();
+            System.out.println("Insert anything to continue");
+            String e = sr.nextLine();
+         
+            INFO.place += 1;
+        
+         }
+         
+         else if (choise==2){
+            do {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("enter studint name or id for deleting : ");
+            String delete = sr.nextLine();
+            deleteastudint(delete);
+            } while (INFO.continue0 == false);
+            String e = sr.nextLine(); 
+             System.out.println();
+            System.out.println();
+            System.out.println("Insert anything to continue");
+            
+         }
+         
+         else if (choise==3){
+            
+            System.out.println("");
+            System.out.println("");
+            System.out.println("enter studint name or id : ");
+            String showinfo = sr.nextLine();
+            showinfo(showinfo);
+             System.out.println();
+            System.out.println();
+            System.out.println("Insert anything to continue");
+            String e = sr.nextLine();
+         }   
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	    }
+    }   
+}
